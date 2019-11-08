@@ -192,9 +192,9 @@ train_params = {
             'width_time_mask': 6,
         },
         "dataset_files": [
-            "/data/librispeech/librivox-train-clean-100.csv",
-            "/data/librispeech/librivox-train-clean-360.csv",
-            "/data/librispeech/librivox-train-other-500.csv"
+            "/home/yhwang/models/research/deep_speech/dataset/train-clean-100/LibriSpeech/train-clean-100.csv",
+            "/home/yhwang/models/research/deep_speech/dataset/train-clean-360/LibriSpeech/train-clean-360.csv",
+            "/home/yhwang/models/research/deep_speech/dataset/train-other-500/LibriSpeech/train-other-500.csv"
         ],
         "max_duration": 16.7,
         "shuffle": True,
@@ -205,7 +205,7 @@ eval_params = {
     "data_layer": Speech2TextDataLayer,
     "data_layer_params": {
         "dataset_files": [
-            "/data/librispeech/librivox-dev-clean.csv",
+            "/home/yhwang/models/research/deep_speech/dataset/dev-clean/LibriSpeech/dev-clean.csv",
         ],
         "shuffle": False,
     },
@@ -215,7 +215,7 @@ infer_params = {
     "data_layer": Speech2TextDataLayer,
     "data_layer_params": {
         "dataset_files": [
-            "/data/librispeech/librivox-test-clean.csv",
+            "/home/yhwang/models/research/deep_speech/dataset/test-clean/LibriSpeech/test-clean.csv",
         ],
         "shuffle": False,
     },
